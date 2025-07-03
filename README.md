@@ -1,13 +1,42 @@
-# React + Vite
+# 🗂️ Kanban Board Application with Authentication
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, full-stack Kanban Board application that enables users to manage tasks visually with drag-and-drop functionality. Includes user authentication, persistent storage, and responsive UI.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 **User Authentication**
+  - Sign up, log in, and secure session management using JWT
+- 🧩 **Task Management**
+  - Create, edit, delete, and drag tasks across columns
+- 📦 **Column Management**
+  - Add or rename Kanban columns
+- 💾 **Persistent Storage**
+  - Tasks and boards saved in a database
+- 📱 **Responsive Design**
+  - Fully mobile-friendly and optimized for all screen sizes
+- ☁️ **Deployed Version**
+  - [Comming soon](#)
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Project_Management_Kanban_board
+### Frontend
+- **React 19** with `createBrowserRouter`
+- TailwindCSS for styling
+- `react-beautiful-dnd` for drag-and-drop
+- React Context API for auth state management
+
+### Backend
+- Node.js + Express.js
+- MongoDB (via Mongoose)
+- JWT for authentication
+- Bcrypt for password hashing
+
+## 🔐 Authentication Flow
+
+1. Users register or log in via the frontend form
+2. Backend generates a JWT token upon successful login
+3. Token is stored in localStorage and sent in headers for protected routes
+4. Context API maintains auth state across components
+
+## 📁 Folder Structure
+
